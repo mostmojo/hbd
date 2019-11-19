@@ -16,22 +16,22 @@ var x = 1;
 var y = 1;
 
 function screensaver () {
-var positionX = cat.offsetLeft;
-var positionY = cat.offsetTop;
+  var positionX = cat.offsetLeft;
+  var positionY = cat.offsetTop;
 
-if (positionX + cat.offsetWidth > boundaryX || positionX < 0) {
-x = x *= -1;
+  if (positionX + cat.offsetWidth > boundaryX || positionX < 0) {
+	x = x *= -1;
 
-}
+  }
 
-if (positionY + cat.offsetHeight > boundaryY || positionY < 0) {
-y = y *= -1;
-}
+  if (positionY + cat.offsetHeight > boundaryY || positionY < 0) {
+	y = y *= -1;
+  }
 
-cat.style.left = cat.x + (speed * x) + 'px';
-cat.style.top = cat.y + (speed * y) + 'px';
+  cat.style.left = cat.x + (speed * x) + 'px';
+  cat.style.top = cat.y + (speed * y) + 'px';
 
-setTimeout(screensaver, 20);
+  setTimeout(screensaver, 20);
 
 }
 setTimeout(screensaver, 20);
