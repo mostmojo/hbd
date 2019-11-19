@@ -50,7 +50,7 @@ nav {
 .cart {
 	flex: 1;
 	justify-content: flex-end;
-	width: 3rem;
+	width: 2rem;
 	height: 2rem;
 }
 
@@ -201,6 +201,7 @@ nav {
 	.cover img {
 		height: 60%;
 		margin-left: 5rem;
+		margin-top: 2rem;
 	}
 
 	.small-cirlce,
