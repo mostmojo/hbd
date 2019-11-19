@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Screensaver in JS</title>
+</head>
+  <body>
+    <script type="text/javascript">
+
+      var cat = document.createElement("img");
+      document.body.appendChild(cat);
+
+      cat.src = "cat.png";
+      cat.style.width = "280px";
+      cat.style.left = "0px";
+      cat.style.top = "0px";
+
+      cat.style.position = "absolute";
+
+      var boundaryX = window.innerWidth;
+      var boundaryY = window.innerHeight;
+
+      var speed = 6;
+      var x = 1;
+      var y = 1;
+
+      function screensaver () {
+        var positionX = cat.offsetLeft;
+        var positionY = cat.offsetTop;
+
+        if (positionX + cat.offsetWidth > boundaryX || positionX < 0) {
+          x = x *= -1;
+
+        }
+
+        if (positionY + cat.offsetHeight > boundaryY || positionY < 0) {
+          y = y *= -1;
+        }
+
+        cat.style.left = cat.x + (speed * x) + 'px';
+        cat.style.top = cat.y + (speed * y) + 'px';
+
+        setTimeout(screensaver, 20);
+
+      }
+
+      setTimeout(screensaver, 20);
+    </script>
+  </body>
+</html>
