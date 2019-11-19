@@ -25,6 +25,7 @@ header {
 .logo-text {
 	font-weight: 400;
 	margin: 5px;
+	font-size: 0.6rem;
 }
 
 .logo-container {
@@ -36,13 +37,13 @@ nav {
 }
 
 .nav-links {
-	justify-content: space-around;
+	justify-content: space-evenly;
 	list-style: none;
 }
 
 .nav-link {
 	color: #5f5f79;
-	font-size: 18px;
+	font-size: 14px;
 	text-decoration: none;
 }
 
