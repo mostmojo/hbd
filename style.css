@@ -140,14 +140,14 @@ nav {
 	left: 20%;
 	z-index: 1;
 }
-
+/*
 .laptop-select {
 	width: 15%;
 	display: flex;
 	justify-content: space-around;
 	position: absolute;
 	right: 20%;
-}
+} */
 
 @keyframes drop {
 	0% {
@@ -187,13 +187,13 @@ nav {
 	.cta {
 		padding: 10px 0px 0px 0px;
 	}
-
+/*
 	.laptop-select {
 		bottom: 5%;
 		right: 50%;
 		width: 40%;
 		transform: translate(50%, 5%);
-	}
+	} */
 
 	.cover img {
 		height: 60%;
